@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonido Automático</title>
+    <title>Reproducir Sonido</title>
 </head>
 <body>
-    <button onclick="playAudio()">Reproducir sonido</button>
+    <button onclick="playAudio()">🔊 Reproducir sonido</button>
     <audio id="audio">
         <source src="sonido.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
