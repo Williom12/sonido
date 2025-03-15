@@ -6,18 +6,17 @@
     <title>Sonido Automático</title>
 </head>
 <body>
-    <audio id="audio" autoplay>
+    <button onclick="playAudio()">Reproducir sonido</button>
+    <audio id="audio">
         <source src="sonido.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        function playAudio() {
             let audio = document.getElementById("audio");
-            audio.play().catch(error => {
-                console.log("La reproducción automática fue bloqueada. El usuario debe interactuar primero.");
-            });
-        });
+            audio.play();
+        }
     </script>
 </body>
 </html>
